@@ -10,12 +10,12 @@ Test Setup  Test Setup
 Test Teardown  Close all browsers
 
 *** Variables ***
-${global_first_row_xpath} =    xpath=//div[@class="documentContent"]/form[1]/div[1]/div/div/table/tbody/tr[1]
+${global_first_row_xpath} =    xpath=//table[@class="datagridwidget-table-view"]/tbody/tr[1]
 ${global_state_xpath} =        ${global_first_row_xpath}/td[1]/select
 ${global_value_xpath} =        ${global_first_row_xpath}/td[2]/input
 ${global_contributor_xpath} =  ${global_first_row_xpath}/td[3]/span/span[1]/input
 
-${localrolefield_first_row_xpath} =  xpath=//div[@class="documentContent"]/form[1]/div[2]/div/div/table/tbody/tr[1]
+${localrolefield_first_row_xpath} =  xpath=//table[@class="datagridwidget-table-view"]/tbody/tr[1]
 ${localrolefield_state_xpath} =      ${localrolefield_first_row_xpath}/td[1]/select
 ${localrolefield_value_xpath} =      ${localrolefield_first_row_xpath}/td[2]/input
 ${localrolefield_editor_xpath} =     ${localrolefield_first_row_xpath}/td[3]/span/span[2]/input
